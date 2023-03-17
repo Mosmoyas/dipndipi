@@ -31,7 +31,6 @@
     display: flex;
     margin-top: 1rem;
     justify-content: var(--lft-direction);
-    /* background-image: url('./assets/images/main/wall2.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

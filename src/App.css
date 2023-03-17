@@ -6,7 +6,6 @@
 }
 
 body {
-    /* background-color: black !important; */
     background-color: #1C212B !important; 
     font-family: "Cairo", sans-serif !important}
 
@@ -126,7 +125,7 @@ a {
     }
 }
 
-*/ .scale-up-center {
+ .scale-up-center {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
