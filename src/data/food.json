@@ -1,0 +1,102 @@
+[
+  {
+    "breakfast": [
+      {
+        "category": "",
+        "type": "",
+        "name": "Breakfast for 3 Person",
+        "description": "Chicken fajita crepe - pepperoni pizza - fried eggs - cheese plate - labneh - vegetable plate - pancake with chocolate - bread - tea for 3 people",
+        "price": "25000",
+        "image": "breakfast_for_3_person.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Breakfast for One Person",
+        "description": "Choose a dish from the following: Museo crepe | Madam Crepe | Cheese Crepe | Chicken Fajita Crepe | feta cheese crepe - Fried eggs - small vegetable plate - bread - tea",
+        "price": "10000",
+        "image": "breakfast_for_one_person.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Breakfast for 5 Person",
+        "description": "Honey-labneh-pepperoni pizza-egg-stuffed with meat-blueberry jam-strawberry jam-pancake with chocolate-egg and mortadella-guimar-vegetables-samon-tea-molasses-butter-shallal cheese-hummus with tahini",
+        "price": "50000",
+        "image": "breakfast_for_5_person.jpg"
+      }
+    ],
+
+    "salt crepe": [
+      {
+        "category": "",
+        "type": "",
+        "name": "Chicken Wrap",
+        "description": "chicken wrap",
+        "price": "8000",
+        "image": "chicken_wrap.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Chicken Caesar",
+        "description": "Chicken and Edam cheese, garnished with lettuce and toasted toast and served with Caesar dressing",
+        "price": "8000",
+        "image": "chicken_caesar.jpg"
+      }
+    ],
+    "quesadilla": [
+      {
+        "category": "",
+        "type": "",
+        "name": "Chicken",
+        "description": "Mixed cheeses, spinach, fried onions, oregano and mayonnaise",
+        "price": "9000",
+        "image": "chicken.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Smoked Turkey and Cheese",
+        "description": "Pesto, fried mushrooms, mayonnaise",
+        "price": "8500",
+        "image": "smoked_turkey_and_cheese.jpg"
+      }
+    ],
+
+    "tortilla pizza": [
+      {
+        "category": "",
+        "type": "",
+        "name": "Margarita",
+        "description": "Tortilla bread covered with mozzarella cheese, parmesan cheese and tomato sauce",
+        "price": "7500",
+        "image": "margarita.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Pepperoni",
+        "description": "Tortilla bread covered with pepperoni, tomato sauce, mozzarella cheese and parmesan",
+        "price": "8500",
+        "image": "pepperoni.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Vegetables",
+        "description": "Tortilla bread tossed with sweet pepper, corn, sugar syrup, tomato sauce, mozzarella cheese and",
+        "price": "8500",
+        "image": "vegetables.jpg"
+      },
+      {
+        "category": "",
+        "type": "",
+        "name": "Turkey and Cheese",
+        "description": "Tortilla bread topped with smoked turkey slices, fresh mushrooms, tomato sauce, mozzarella cheese and parmesan cheese, garnished with fresh arugula",
+        "price": "9500",
+        "image": "turkey_and_cheese.jpg"
+      }
+    ]
+  }
+]
