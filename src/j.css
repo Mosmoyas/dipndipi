@@ -1,0 +1,123 @@
+@media screen and (max-width: 678px) {
+
+    .section__page {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+        width: 100%;
+    }
+
+    /* .section__page {
+           flex-direction: column;
+           align-items: center;
+         } */
+
+    .section__page-sidebar {
+
+        /* flex-direction: row; */
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        margin-bottom: 2rem;
+        width: 45%;
+    }
+
+    /* .section__page-sidebar {
+           position: relative;
+           margin-bottom: 2rem;
+           justify-content: space-around;
+         } */
+
+
+    .section__page-sidebar_category {
+        text-align: center;
+
+    }
+
+    /* .section__page-sidebar_category {
+
+   width: 100%;
+   align-items: unset;
+   text-align: center;
+ } */
+    .section__page-sidebar_category>div {
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .section__page-sidebar_category>div:hover {
+        width: 100%;
+        left: 0;
+    }
+
+    .section__page-container {
+        margin: 0;
+    }
+
+    /* .section__page-container {
+           justify-content: center;
+           margin-left: 5rem;
+         } */
+    .section__page-container_category {
+        font-size: 1.2rem;
+        letter-spacing: .6rem;
+        text-align: center;
+        align-items: inherit;
+        width: fit-content;
+
+    }
+
+    /* .section__page-container_category {
+   font-size: 1.5rem;
+   letter-spacing: .25rem;
+   padding: 1rem;
+   width: fit-content;
+ } */
+    .section__page-container_items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -5rem;
+    }
+
+    .section__page-container_item-info_item {
+        padding: 1rem;
+        box-shadow: 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5;
+        margin-bottom: 2rem;
+        border: 1px solid #040c183b;
+    }
+
+
+    .section__page-container_name {
+        font-size: 1.2rem;
+    }
+
+    /* .section__page-container_name {
+           padding: 1rem 0;
+           color: darkcyan;
+         } */
+
+    .section__page-container_price {
+        font-size: 1rem;
+    }
+
+    .section__page-container_price {
+        margin-bottom: 0.75rem;
+        color: goldenrod;
+
+    }
+
+    .section__page-container_image {
+        max-width: 300px;
+    }
+
+    /* .section__page-container_image {
+              width: 100%;
+              min-width: 300px;
+              max-width: 300px;
+            } */
+
+
+}

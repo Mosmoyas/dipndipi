@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
-import chocolate from '../../constants/chocolate';
+import React, { useState, useEffect } from 'react';
+import { chocolate } from '../../constants';
 
-const Chocolate = () => {
+const Food = () => {
   const [foodItems, setFoodItems] = useState([]);
   const [selectedMealType, setSelectedMealType] = useState(null);
   const [mealTypes, setMealTypes] = useState([]);
@@ -9,10 +9,10 @@ const Chocolate = () => {
   useEffect(() => {
     const allItems = Object.values(chocolate).reduce((acc, curr) => [...acc, ...curr], []);
     const items = allItems.map((item, index) => (
-      <div className='section__page-container_items-info_item' key={index}>
-        <h3 className='section__page-container_name'>{item.name}</h3>
-        <p className='section__page-container_price'>Price: {item.price}</p>
-        <img className='section__page-container_image' src={item.image} alt={item.name} />
+      <div className='section__page-container_itemscontainer-item' key={index}>
+        <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
+        <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
+        <img className='section__page-container_itemscontainer-item_image' src={item.image} alt={item.name} />
       </div>
     ));
     setFoodItems(items);
@@ -41,12 +41,12 @@ const Chocolate = () => {
         {selectedMealType ? (
           <div className="section__page-container_items">
             <h1 className='section__page-container_category'>{selectedMealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h1>
-            <div className='section__page-container_items-info'>
+            <div className='section__page-container_itemscontainer'>
               {chocolate[selectedMealType]?.map((item, index) => (
-                <div className='section__page-container_items-info_item' key={index}>
-                  <h3 className='section__page-container_name'>{item.name}</h3>
-                  <p className='section__page-container_price'>Price: {item.price}</p>
-                  <img className='section__page-container_image' src={item.image} alt={item.name} />
+                <div className='section__page-container_itemscontainer-item' key={index}>
+                  <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
+                  <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
+                  <img className='section__page-container_itemscontainer-item_image' src={item.image} alt={item.name} />
                 </div>
               ))}
             </div>
@@ -54,7 +54,7 @@ const Chocolate = () => {
         ) : (
           <div className="section__page-container_items">
             <h1 className='section__page-container_category'>All items</h1>
-            <div className='section__page-container_items-info'>
+            <div className='section__page-container_itemscontainer'>
               {foodItems}
             </div>
           </div>
@@ -63,4 +63,5 @@ const Chocolate = () => {
     </div>
   );
 };
-export default Chocolate;
+
+export default Food;

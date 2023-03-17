@@ -6,8 +6,9 @@
 }
 
 body {
-    /* background-color: var(--color-bg); */
-}
+    /* background-color: black !important; */
+    background-color: #1C212B !important; 
+    font-family: "Cairo", sans-serif !important}
 
 
 a {
@@ -24,7 +25,7 @@ a {
     background: -webkit-radial-gradient(circle at 3% 25%, rgba(4, 12, 24, 1) 0%, rgba(238, 130, 238, 1) 100%);
 
     /* opera 11.10+ */
-        background: -o-radial-gradient(circle at 3% 25%, rgba(4, 12, 24, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    background: -o-radial-gradient(circle at 3% 25%, rgba(4, 12, 24, 1) 0%, rgba(238, 130, 238, 1) 100%);
 
     /* ie 10+ 
         background: -ms-radial-gradient(circle at 3% 25%, rgba(4, 12, 24, 1) 0%, rgba(238, 130, 238, 1) 100%);*/
@@ -93,7 +94,7 @@ a {
     }
 }
 
-@media screen and (max-width:700px) {
+/* @media screen and (max-width:700px) {
     .section__margin {
         margin: 4rem
     }
@@ -125,7 +126,7 @@ a {
     }
 }
 
-.scale-up-center {
+*/ .scale-up-center {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

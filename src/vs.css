@@ -1,0 +1,272 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;700&display=swap');
+
+  :root {
+      --font-family: 'manrope', sans-serif;
+      --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+      --gradient-bar: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+      --color-bg: #040C18;
+      /* --color-bg: #002853; */
+      --color-footer: #031B34;
+      --color-blog: #042C54;
+      --color-text: #81AFDD;
+      --color-subtext: #FF8A71;
+
+      --color-facebook: #1877f2;
+      --color-twitter: #1da1f2;
+      --color-instagram: #c32aa3;
+      --color-snapchat: #fffc00;
+      --color-facebook-hav: #1876f280;
+      --color-twitter-hav: #1ca0f280;
+      --color-instagram-hav: #c229a180;
+      --color-snapchat-hav: #fffb0080;
+
+      --bg-navbar: #02070E;
+      --color-footer: #031B34;
+  }
+
+  .section__page {
+      display: flex;
+      margin-top: 1rem;
+
+  }
+
+
+  .section__page-sidebar {
+      width: 300px;
+      margin-right: 2rem;
+      /* position: fixed; */
+      display: flex;
+      font-family: "Cairo", sans-serif;
+  }
+
+  img {
+      max-width: 500px;
+
+  }
+
+
+  .section__page-sidebar_category {
+      font-family: "Cairo", sans-serif;
+      display: flex;
+      flex-direction: column;
+      margin-left: .5rem;
+      width: 90%;
+  }
+
+  .section__page-sidebar_category>div {
+
+      margin-bottom: 1rem;
+      background-color: rgba(235, 59, 20);
+      color: white;
+      font-size: 1rem;
+      transition: text-transform, width 1.5s ease-in-out;
+      position: relative;
+      cursor: pointer;
+      border-radius: 6px;
+      padding: 1rem;
+  }
+
+  .section__page-sidebar_category>div:hover {
+      background-color: rgba(235, 59, 20, 0.829);
+      color: white;
+      /* text-transform: uppercase;font-size: 1.5rem; */
+  }
+
+  .section__page-container {
+      display: flex;
+      justify-content: center;
+      margin-left: 17rem;
+      font-family: "Cairo", sans-serif;
+  }
+
+  .section__page-container_category {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      background-color: #031B34;
+      text-transform: uppercase;
+      letter-spacing: .5rem;
+      padding: 1rem;
+      color: wheat;
+      width: fit-content;
+  }
+
+  .section__page-container_items {
+      display: flex;
+      flex-direction: column;
+
+  }
+
+
+  .section__page-container_items-info {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+  }
+
+  .section__page-container_items-info_item {
+
+
+      padding: 1rem;
+      /* box-shadow: 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5; */
+      margin: 1.5rem;
+      border: 1px solid #040c183b;
+      transition: all .4s ease-in-out;
+  }
+
+  .section__page-container_items-info_item:hover {
+      box-shadow: 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5;
+      /* box-shadow: -3px -3px 4px #f9edea, -3px -3px 4px #cae8ec, -3px -3px 4px #cae8ec; */
+      border: none
+  }
+
+  .section__page-container_name {
+      margin: 0;
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      color: darkcyan;
+  }
+
+  .section__page-container_price {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      color: goldenrod;
+  }
+
+  .section__page-container_items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .section__page-container_items_image {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  /* @media screen and (max-width: 678px) { */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      .section__page {
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 5rem;
+      }
+
+      .section__page-sidebar {
+          justify-content: space-between;
+          flex-wrap: wrap;
+          position: relative;
+          margin-bottom: 2rem;
+      }
+
+      .section__page-sidebar_category {
+          text-align: center;
+          /* width: 100%; */
+          align-items: unset;
+      }
+
+
+
+
+      .section__page-container {
+          justify-content: center;
+          margin-left: 5rem;
+      }
+
+      .section__page-container_category {
+          font-size: 1.5rem;
+          letter-spacing: .25rem;
+          padding: 1rem;
+          width: fit-content;
+      }
+
+      .section__page-container_items {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-left: -5rem;
+      }
+
+      .section__page-container_item-info_item {
+          padding: 1rem;
+          box-shadow: 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5, 3px 3px 4px #a9a9b5;
+          margin-bottom: 2rem;
+          border: 1px solid #040c183b;
+      }
+
+      .section__page-container_name {
+          padding: 1rem 0;
+          color: darkcyan;
+      }
+
+      .section__page-container_price {
+          margin-bottom: 0.75rem;
+          color: rgb(67, 67, 65);
+      }
+
+      .section__page-container_image {
+          width: 100%;
+          min-width: 300px;
+          max-width: 300px;
+      }
+  }
+
+
+
+
+
+
+  /* For screens with a maximum width of 480px (e.g. mobile phones in portrait mode) */
+  @media only screen and (max-width: 480px) {
+      /* Styles for small screens */
+  }
+
+  /* For screens with a minimum width of 481px and a maximum width of 768px (e.g. mobile phones in landscape mode and small tablets) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+      /* Styles for medium screens */
+  }
+
+  /* For screens with a minimum width of 769px and a maximum width of 1024px (e.g. tablets in landscape mode and small laptops) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      /* Styles for large screens */
+  }
+
+  /* For screens with a minimum width of 1025px (e.g. large laptops and desktops) */
+  @media only screen and (min-width: 1025px) {
+      /* Styles for extra-large screens */
+  }
+
+  /* 
+  @media screen and (min-width: 679px) {
+    .section__page-sidebar_category {
+    }
+  } */
+
+  /* @media screen and (max-width: 991px) {
+    .section__page {
+      justify-content: space-between;
+    }
+
+
+
+    .section__page-container_item-info_item {
+      width: 400px;
+    }
+
+    .section__page-container_image {
+      max-width: 100%;
+    }
+
+  }
+
+  @media screen and (min-width: 992px) {
+
+    .section__page-container {
+      margin-left: 10rem;
+    }
+  } */

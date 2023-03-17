@@ -1,0 +1,75 @@
+/* Mobile styles for iPhone 12 and iPhone Pro Max */
+@media only screen and (min-device-width: 375px) and (max-device-width: 428px) and (-webkit-device-pixel-ratio: 3) {
+    body {
+        background-color: red;
+        color: black;
+    }
+
+    /* Match the photos for every screen with the same size */
+    .section__page-container_items-info_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hover effects */
+    .section__page-container_items-info_item:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Mobile styles for Galaxy */
+@media only screen and (min-device-width: 360px) and (max-device-width: 414px) and (-webkit-device-pixel-ratio: 4) {
+    body {
+        background-color: red;
+        color: black;
+    }
+
+    /* Match the photos for every screen with the same size */
+    .section__page-container_items-info_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hover effects */
+    .section__page-container_items-info_item:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    body {
+        background-color: red;
+        color: black;
+    }
+
+    /* Match the photos for every screen with the same size */
+    .section__page-container_items-info_item img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Hover effects */
+    .section__page-container_items-info_item:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Laptop/Big screen styles */
+@media only screen and (min-device-width: 1025px) {
+    body {
+        background: linear-gradient(to bottom right, rgb(115, 114, 114), rgb(171, 171, 173));
+        color: rgb(66, 28, 28);
+    }
+
+    /* Match the photos for every screen with the same size */
+    .section__page-container_items-info_item img {
+        width: 50%;
+        height: auto;
+    }
+
+    /* Hover effects */
+    .section__page-container_items-info_item:hover {
+        opacity: 0.8;
+    }
+}
