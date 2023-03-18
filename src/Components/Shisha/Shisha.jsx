@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { drinks } from '../../constants';
+import { bar } from '../../constants';
 
-const Food = () => {
-  const [foodItems, setFoodItems] = useState([]);
+const Shisha = () => {
+  const [Items, setItems] = useState([]);
   const [selectedMealType, setSelectedMealType] = useState(null);
   const [mealTypes, setMealTypes] = useState([]);
 
   useEffect(() => {
-    const allItems = Object.values(drinks).reduce((acc, curr) => [...acc, ...curr], []);
+    const allItems = Object.values(bar).reduce((acc, curr) => [...acc, ...curr], []);
     const items = allItems.map((item, index) => (
       <div className='section__page-container_itemscontainer-item' key={index}>
         <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
@@ -15,11 +15,11 @@ const Food = () => {
         <img className='section__page-container_itemscontainer-item_image' src={item.image} alt={item.name} />
       </div>
     ));
-    setFoodItems(items);
+    setItems(items);
   }, []);
 
   useEffect(() => {
-    const types = Object.keys(drinks).map((mealType, index) => {
+    const types = Object.keys(bar).map((mealType, index) => {
       const formattedMealType = mealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       return (
         <div key={index} onClick={() => setSelectedMealType(mealType)}>
@@ -42,7 +42,7 @@ const Food = () => {
           <div className="section__page-container_items">
             <h1 className='section__page-container_category'>{selectedMealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h1>
             <div className='section__page-container_itemscontainer'>
-              {drinks[selectedMealType]?.map((item, index) => (
+              {bar[selectedMealType]?.map((item, index) => (
                 <div className='section__page-container_itemscontainer-item' key={index}>
                   <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
                   <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
@@ -55,7 +55,7 @@ const Food = () => {
           <div className="section__page-container_items">
             <h1 className='section__page-container_category'>All items</h1>
             <div className='section__page-container_itemscontainer'>
-              {foodItems}
+              {Items}
             </div>
           </div>
         )}
@@ -64,4 +64,4 @@ const Food = () => {
   );
 };
 
-export default Food;
+export default Shisha;

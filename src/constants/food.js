@@ -1,8 +1,9 @@
 import images from "./images";
-
 const food = {
-    breakfast: [{
+    breakfast: [
+        {
         name: "Breakfast for 3 Person",
+        arabic_name: "فطور لـ 3 أشخاص",
         description:
             "Chicken fajita crepe - pepperoni pizza - fried eggs - cheese plate - labneh - vegetable plate - pancake with chocolate - bread - tea for 3 people",
         price: "25000",
@@ -10,6 +11,8 @@ const food = {
     },
     {
         name: "Breakfast for One Person",
+        arabic_name: "فطور لشخص واحد",
+
         description:
             "Choose a dish from the following: Museo crepe | Madam Crepe | Cheese Crepe | Chicken Fajita Crepe | feta cheese crepe - Fried eggs - small vegetable plate - bread - tea",
         price: "10000",
@@ -17,6 +20,7 @@ const food = {
     },
     {
         name: "Breakfast for 5 Person",
+        arabic_name: "فطور لخمس اشخاص",
         description:
             "Honey-labneh-pepperoni pizza-egg-stuffed with meat-blueberry jam-strawberry jam-pancake with chocolate-egg and mortadella-guimar-vegetables-samon-tea-molasses-butter-shallal cheese-hummus with tahini",
         price: "50000",
@@ -25,8 +29,11 @@ const food = {
 
     }],
 
-    salt_crepe: [{
+    salt_crepe: [
+        {
         name: "Chicken Wrap",
+        arabic_name: "راب الدجاج",
+
         description: "chicken wrap",
         price: "8000",
         image:
@@ -35,6 +42,8 @@ const food = {
     },
     {
         name: "Chicken Caesar",
+        arabic_name: "سيزر بالدجاج",
+
         description:
             "Chicken and Edam cheese, garnished with lettuce and toasted toast and served with Caesar dressing",
         price: "8000",
@@ -45,6 +54,8 @@ const food = {
 
     quesadilla: [{
         name: "Chicken",
+        arabic_name: "الدجاج",
+
         description: "Mixed cheeses, spinach, fried onions, oregano and mayonnaise",
         price: "9000",
         image:
@@ -53,6 +64,9 @@ const food = {
     },
     {
         name: "Smoked Turkey and Cheese",
+        arabic_name: "الحبش المدخن والجبنة",
+
+        
         description: "Pesto, fried mushrooms, mayonnaise",
         price: "8500",
         image:
@@ -63,6 +77,7 @@ const food = {
     tortilla_pizza: [{
 
         name: "Margarita",
+        arabic_name: "مارغريتا",
         description:
             "Tortilla bread covered with mozzarella cheese, parmesan cheese and tomato sauce",
         price: "7500",
@@ -72,6 +87,8 @@ const food = {
     },
     {
         name: "Pepperoni",
+        arabic_name: "الببيروني",
+
         description:
             "Tortilla bread covered with pepperoni, tomato sauce, mozzarella cheese and parmesan",
         price: "8500",
@@ -81,6 +98,8 @@ const food = {
     },
     {
         name: "Vegetables",
+        arabic_name: "خضروات",
+
         description:
             "Tortilla bread tossed with sweet pepper, corn, sugar syrup, tomato sauce, mozzarella cheese and",
         price: "8500",
@@ -90,6 +109,8 @@ const food = {
     },
     {
         name: "Turkey and Cheese",
+        arabic_name: "راب الدجاج",
+
         description:
             "Tortilla bread topped with smoked turkey slices, fresh mushrooms, tomato sauce, mozzarella cheese and parmesan cheese, garnished with fresh arugula",
         price: "9500",

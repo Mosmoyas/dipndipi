@@ -1,6 +1,30 @@
+.logo {
+    background-color: rgb(214, 214, 213);
+    padding: 2rem 1rem;
+    border-radius: 50px 0 45px;
+    transition: .5s;
+}
+
+.logo:hover {
+    /* background-color: rgb(253, 5, 5); */
+
+}
+
 .logoimage {
     width: 130px;
+    width: 150px;
+    background-color: #c8c6c65c;
+    padding: .75rem 2rem;
+    border-radius: 45px;
+    transition: .5s;
 }
+
+.logoimage:hover {
+    background-color: hsla(0, 3%, 70%, 0.561);
+    border-radius: 50px 0 50px;
+}
+
+
 
 .flxgr li {
     font-weight: bold;
@@ -8,12 +32,12 @@
 }
 
 .flxgr li a {
-    color:red;
+    color: red;
 
 }
 
 .flxgr li a:hover {
-    color: rgb(52, 51, 51);
+    color: rgb(160, 159, 159);
 }
 
 button:focus {
@@ -29,13 +53,37 @@ button:focus {
     justify-content: center;
 }
 
+.navbar-toggler {
+    color: white !important;
+    outline: none;
+    font-size: 2rem;
+}
+
+.navbar-toggler svg {
+
+    font-size: 2rem;
+}
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
 .nav-item {
     margin: 0 1rem;
 
 }
 
+
+
 .nvli {
     text-align: center;
+    border-bottom: 1px solid #343434;
+}
+
+.nborder {
+    border: none !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,6 +95,14 @@ button:focus {
 
     .navbar-toggler {
         display: block;
+    }
+
+    .logo {
+        padding: .2rem .7rem;
+    }
+
+    .logoimage {
+        padding: .2rem .9rem;
     }
 
 

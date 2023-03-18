@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-md bg text-white">
-      <Link to="/" className="navbar-brand fs-3 ms-3">
+      <Link to="/" className="logo navbar-brand fs-3 ms-3">
         <img className="logoimage" src={logo} alt="" />
       </Link>
       {isMobile && (
@@ -52,7 +52,7 @@ const Navbar = () => {
               Chocolate
             </Link>
           </li>
-          <li className="nvli nav-item ">
+          <li className="nvli nborder nav-item ">
 
             <Link to="/shisha" className="nav-link mx-0">
               Shisha

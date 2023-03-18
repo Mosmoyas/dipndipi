@@ -118,6 +118,14 @@ import waffle_fries from "../assets/images/chocholate/waffle_fries.jpg";
 import waffle_stick from "../assets/images/chocholate/waffle_stick.jpg";
 
 
+//bar
+
+import dipndip from "../assets/images/bar/dipndip.jpg";
+import natural from "../assets/images/bar/natural.jpg";
+
+
+
+
 
  const images={
 
@@ -242,7 +250,11 @@ import waffle_stick from "../assets/images/chocholate/waffle_stick.jpg";
   triple_chocolate_mousse,
   triple_chocolate_waffle,
   waffle_fries,
-  waffle_stick,
+   waffle_stick,
+  
+   //bar 
+   dipndip,
+   natural
 
 };
 
