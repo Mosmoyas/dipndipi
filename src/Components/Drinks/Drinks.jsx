@@ -1,67 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { drinks } from '../../constants';
+import React from 'react'
+import ardrinks from '../../constants/ardrinks';
+import Products from "../../Containers/Products"
 
-const Drinks = () => {
-  const [Items, setItems] = useState([]);
-  const [selectedMealType, setSelectedMealType] = useState(null);
-  const [mealTypes, setMealTypes] = useState([]);
-
-  useEffect(() => {
-    const allItems = Object.values(drinks).reduce((acc, curr) => [...acc, ...curr], []);
-    const items = allItems.map((item, index) => (
-      <div className='section__page-container_itemscontainer-item' key={index}>
-        <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
-        <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
-        <img className='section__page-container_itemscontainer-item_image' src={item.image} alt={item.name} />
-      </div>
-    ));
-    setItems(items);
-  }, []);
-
-  useEffect(() => {
-    const types = Object.keys(drinks).map((mealType, index) => {
-      const formattedMealType = mealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-      return (
-        <div key={index} onClick={() => setSelectedMealType(mealType)}>
-          {formattedMealType}
-        </div>
-      );
-    });
-    setMealTypes(types);
-  }, []);
-
+const Drinks =() => {
   return (
-    <div className="section__page">
-      <div className="section__page-sidebar">
-        <div className="section__page-sidebar_category">
-          {mealTypes}
-        </div>
-      </div>
-      <div className="section__page-container">
-        {selectedMealType ? (
-          <div className="section__page-container_items">
-            <h1 className='section__page-container_category'>{selectedMealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h1>
-            <div className='section__page-container_itemscontainer'>
-              {drinks[selectedMealType]?.map((item, index) => (
-                <div className='section__page-container_itemscontainer-item' key={index}>
-                  <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
-                  <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
-                  <img className='section__page-container_itemscontainer-item_image' src={item.image} alt={item.name} />
-                </div>
-              ))}
-            </div>
-          </div>
-        ) : (
-          <div className="section__page-container_items">
-            <h1 className='section__page-container_category'>All items</h1>
-            <div className='section__page-container_itemscontainer'>
-              {Items}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+    <Products products={ardrinks}>  </Products>
 
-export default Drinks;
+  )
+}
+
+export default Drinks

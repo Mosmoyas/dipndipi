@@ -1,6 +1,8 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Chocolate, Home, Layout, Shisha, Food, Drinks, About } from './Components';
+// import Products from "./Containers/Products"
+import Reciever from './Containers/Reciever';
 
 
 
@@ -18,6 +20,8 @@ function App() {
         { path: 'shisha', element: <Shisha /> },
         { path: 'chocolate', element: <Chocolate /> },
         { path: 'about', element: <About /> },
+        { path: 'reciever', element: <Reciever /> },
+ 
 
       ]
     }

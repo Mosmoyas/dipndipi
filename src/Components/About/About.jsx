@@ -1,8 +1,11 @@
 import React from 'react'
+import ardrinks from '../../constants/ardrinks';
+import Products from "../../Containers/Products"
+import "./about.css"
 
 const About = () => {
     return (
-        <div> About </div>
+        <Products products={ardrinks}>  </Products>
 
     )
 }

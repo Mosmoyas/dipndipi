@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { bar } from '../../constants';
+import { food } from '../../constants';
 
-const Shisha = () => {
+const Food = () => {
   const [Items, setItems] = useState([]);
   const [selectedMealType, setSelectedMealType] = useState(null);
   const [mealTypes, setMealTypes] = useState([]);
 
   useEffect(() => {
-    const allItems = Object.values(bar).reduce((acc, curr) => [...acc, ...curr], []);
+    const allItems = Object.values(food).reduce((acc, curr) => [...acc, ...curr], []);
     const items = allItems.map((item, index) => (
       <div className='section__page-container_itemscontainer-item' key={index}>
         <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
@@ -19,11 +19,11 @@ const Shisha = () => {
   }, []);
 
   useEffect(() => {
-    const types = Object.keys(bar).map((mealType, index) => {
-     
+    const types = Object.keys(food).map((mealType, index) => {
+      const formattedMealType = mealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       return (
         <div key={index} onClick={() => setSelectedMealType(mealType)}>
-          {mealType}
+          {formattedMealType}
         </div>
       );
     });
@@ -32,15 +32,17 @@ const Shisha = () => {
 
   return (
     <div className="section__page">
+      <div className="section__page-sidebar">
         <div className="section__page-sidebar_category">
           {mealTypes}
+        </div>
       </div>
       <div className="section__page-container">
         {selectedMealType ? (
           <div className="section__page-container_items">
-            <h1 className='section__page-container_category'>{selectedMealType}</h1>
+            <h1 className='section__page-container_category'>{selectedMealType.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</h1>
             <div className='section__page-container_itemscontainer'>
-              {bar[selectedMealType]?.map((item, index) => (
+              {food[selectedMealType]?.map((item, index) => (
                 <div className='section__page-container_itemscontainer-item' key={index}>
                   <h3 className='section__page-container_itemscontainer-item_name'>{item.name}</h3>
                   <p className='section__page-container_itemscontainer-item_price'>Price: {item.price}</p>
@@ -62,4 +64,4 @@ const Shisha = () => {
   );
 };
 
-export default Shisha;
+export default Food ;
