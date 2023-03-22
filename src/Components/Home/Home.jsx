@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import images from './index2';
+import images from './index';
 
-
-const theimages = [
+const foodImages = [
   images.fr1,
   images.fr10,
   images.fr11,
@@ -34,52 +33,57 @@ const theimages = [
   images.fr7,
   images.fr8,
   images.fr9,
-
 ]
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-  const changeImage = (index) => {
-    const el = document.getElementById("caption");
-    el.style.backgroundImage = `url(${theimages[index]})`;
-
+  const changeSlide = (index) => {
+    const captionElement = document.getElementById("caption");
+    captionElement.style.backgroundImage = `url(${foodImages[index]})`;
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (currentIndex < theimages.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-        changeImage(currentIndex + 1);
+      if (currentSlideIndex < foodImages.length - 1) {
+        setCurrentSlideIndex(currentSlideIndex + 1);
+        changeSlide(currentSlideIndex + 1);
       } else {
-        setCurrentIndex(0);
-        changeImage(0);
+        setCurrentSlideIndex(0);
+        changeSlide(0);
       }
     }, 3000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [currentSlideIndex]);
 
   return (
-    <div id="body" className="slider-container">
-      <div id='caption' className="caption">
-        <div className="zindex">
-          {/* <div className="heads">
-          <h1>Welcome To DipnDip</h1>
-          <p>Speak with the Taste</p>
-        </div> */}
-          <div className="lang">
-            {/* <Link href="/" className=" bton">
-           
-            Arabic
+    <>
+      <div className="lang">
+        <div>
+          <Link to="/fooden" className="bton">
+            Food
           </Link>
-          <Link href="/" className="bton">
-            English
-          </Link> */}
-          </div>
+        </div>
+        <div>
+          <Link to="/chocolateen" className="bton">
+            Chocolate
+          </Link>
+        </div>
+        <div>
+          <Link to="/drinkseen" className="bton">
+            Drinks
+          </Link>
+        </div>
+        <div>
+          <Link to="/shishaen" className="bton">
+            Shsiha
+          </Link>
         </div>
       </div>
-
-    </div>
+      <div id="body" className="slider-container">
+        <div id="caption" className="caption"></div>
+      </div>
+    </>
   );
 };
 

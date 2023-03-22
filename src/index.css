@@ -3,3 +3,14 @@
   :root {
     --font-family: 'manrope', sans-serif;
   }
+
+  .categoryLink {
+    color: #d74a49;
+    transition: .3s;
+  }
+
+  .categoryLink:hover {
+    background-color: #22222f;
+    color: #f60505;
+    border-bottom: 1px solid #d74a49;
+  }

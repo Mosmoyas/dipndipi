@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import './english.css'
 
 function English(props) {
@@ -29,8 +31,8 @@ function English(props) {
                     onClick={() => setSelectedCategoryType(categoryType)}
                     className="dipndip__category_btn-category"
                 >
-                    {categoryType}
-                </div>
+                    <Link className="categoryLink">                    {categoryType}
+                    </Link>                </div>
             );
         });
         setCategoryTypes(types);

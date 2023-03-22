@@ -36,22 +36,22 @@ const Navbar = () => {
                   id="btn">
                   <ul className="ulist">
                     <li className=" ">
-                      <Link to="/fooden" className="">
+                      <Link to="/fooden" className="categoryLink">
                         {t("food")}
                       </Link>
                     </li>
                     <li className=" ">
-                      <Link to="/drinksen" className="">
+                      <Link to="/drinksen" className="categoryLink">
                         {t("drinks")}
                       </Link>
                     </li>
                     <li className=" ">
-                      <Link to="/chocolateen" className="">
+                      <Link to="/chocolateen" className="categoryLink">
                         {t("chocolate")}
                       </Link>
                     </li>
                     <li className="">
-                      <Link to="/shishaen" className="">
+                      <Link to="/shishaen" className="categoryLink">
                         {t("shisha")}
                       </Link>
                     </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
                       className="btn-lang"
                       onClick={() => i18n.changeLanguage("ar")}
                     >
-                      <Link to="/" className="">
+                      <Link to="/" className="categoryLink">
                         عربي
                       </Link>
                     </li>
@@ -83,22 +83,22 @@ const Navbar = () => {
             >
               <ul className="ulist">
                 <li className=" ">
-                  <Link to="/fooden" className="">
+                  <Link to="/fooden" className="categoryLink">
                     {t("food")}
                   </Link>
                 </li>
                 <li className=" ">
-                  <Link to="/drinksen" className="">
+                  <Link to="/drinksen" className="categoryLink">
                     {t("drinks")}
                   </Link>
                 </li>
                 <li className=" ">
-                  <Link to="/chocolateen" className="">
+                  <Link to="/chocolateen" className="categoryLink">
                     {t("chocolate")}
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="/shishaen" className="">
+                  <Link to="/shishaen" className="categoryLink">
                     {t("shisha")}
                   </Link>
                 </li>
@@ -106,7 +106,7 @@ const Navbar = () => {
                   className="btn-lang"
                   onClick={() => i18n.changeLanguage("ar")}
                 >
-                  <Link to="/" className="">
+                  <Link to="/" className="categoryLink">
                     عربي
                   </Link>
                 </li>
@@ -131,22 +131,22 @@ const Navbar = () => {
                 >
                   <ul className="ulist">
                     <li className=" ">
-                      <Link to="/foodar" className="">
+                      <Link to="/foodar" className="categoryLink">
                         {t("food")}
                       </Link>
                     </li>
                     <li className=" ">
-                      <Link to="/drinksar" className="">
+                      <Link to="/drinksar" className="categoryLink">
                         {t("drinks")}
                       </Link>
                     </li>
                     <li className=" ">
-                      <Link to="/chocolatear" className="">
+                      <Link to="/chocolatear" className="categoryLink">
                         {t("chocolate")}
                       </Link>
                     </li>
                     <li className="">
-                      <Link to="/shishaar" className="">
+                      <Link to="/shishaar" className="categoryLink">
                         {t("shisha")}
                       </Link>
                     </li>
@@ -154,7 +154,7 @@ const Navbar = () => {
                       className="btn-lang"
                       onClick={() => i18n.changeLanguage("ar")}
                     >
-                      <Link to="/" className="">
+                      <Link to="/" className="categoryLink">
                         English
                       </Link>
                     </li>
@@ -178,22 +178,22 @@ const Navbar = () => {
             >
               <ul className="ulist">
                 <li className=" ">
-                  <Link to="/foodar" className="">
+                  <Link to="/foodar" className="categoryLink">
                     {t("food")}
                   </Link>
                 </li>
                 <li className=" ">
-                  <Link to="/drinksar" className="">
+                  <Link to="/drinksar" className="categoryLink">
                     {t("drinks")}
                   </Link>
                 </li>
                 <li className=" ">
-                  <Link to="/chocolatear" className="">
+                  <Link to="/chocolatear" className="categoryLink">
                     {t("chocolate")}
                   </Link>
                 </li>
                 <li className="">
-                  <Link to="/shishaar" className="">
+                  <Link to="/shishaar" className="categoryLink">
                     {t("shisha")}
                   </Link>
                 </li>
@@ -201,7 +201,7 @@ const Navbar = () => {
                   className="btn-lang"
                   onClick={() => i18n.changeLanguage("en")}
                 >
-                  <Link to="/" className="">
+                  <Link to="/" className="categoryLink">
                     English
                   </Link>
                 </li>

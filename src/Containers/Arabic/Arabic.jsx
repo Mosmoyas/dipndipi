@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import './arabic.css'
-
-
 
 function Arabic(props) {
     const { products } = props;
@@ -31,8 +30,8 @@ function Arabic(props) {
                     onClick={() => setSelectedCategoryType(categoryType)}
                     className="dipndip__category_btn-category"
                 >
-                    {categoryType}
-                </div>
+                    <Link className="categoryLink">                    {categoryType}
+                    </Link>                    </div>
             );
         });
         setCategoryTypes(types);

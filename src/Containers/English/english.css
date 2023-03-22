@@ -19,6 +19,7 @@
     margin: .5rem 0;
     text-transform: uppercase;
     font-size: 1.2rem;
+    cursor: pointer;
 
 }
 
@@ -41,7 +42,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-   
+
 }
 
 

@@ -16,8 +16,8 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url(../../assets/images/dnd/fr12.jpg);
-    background-size: cover;
-    background-position:center;
+    background-size: fill;
+    background-position: center;
 }
 
 /* Style for the caption overlay */
@@ -66,11 +66,24 @@ body {
 /* Style for the language links */
 .lang {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
+    max-width: 300px;
+    position: absolute;
+    z-index: 100;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.lang>div {
+    margin: .5rem;
 }
 
 .bton {
+    text-align: center;
+    min-width: 180px;
     display: inline-block;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
