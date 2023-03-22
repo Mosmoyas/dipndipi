@@ -55,7 +55,7 @@ const Home = () => {
         setCurrentIndex(0);
         changeImage(0);
       }
-    }, 2000);
+    }, 3000);
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -63,18 +63,19 @@ const Home = () => {
     <div id="body" className="slider-container">
       <div id='caption' className="caption">
         <div className="zindex">
-        <div className="heads">
+          {/* <div className="heads">
           <h1>Welcome To DipnDip</h1>
           <p>Speak with the Taste</p>
-        </div>
-        <div className="lang">
-          <Link href="/" className=" bton">
+        </div> */}
+          <div className="lang">
+            {/* <Link href="/" className=" bton">
+           
             Arabic
           </Link>
           <Link href="/" className="bton">
             English
-          </Link>
-        </div>
+          </Link> */}
+          </div>
         </div>
       </div>
 

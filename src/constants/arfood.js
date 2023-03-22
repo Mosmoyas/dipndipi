@@ -35,7 +35,7 @@ const arfood = [
     {
       id:4,  name: "Chicken Wrap",
         arabic_name: "راب الدجاج",
-        category: "salt_crepe",
+        category: "salt crepe",
         ar_category: "كريب مالحة",
         description: "chicken wrap",
         price: "8000",
@@ -44,7 +44,7 @@ const arfood = [
     {
       id:5,  name: "Chicken Caesar",
         arabic_name: "سيزر بالدجاج",
-        category: "salt_crepe",
+        category: "salt crepe",
         ar_category: "كريب مالحة",
         description:
             "Chicken and Edam cheese, garnished with lettuce and toasted toast and served with Caesar dressing",

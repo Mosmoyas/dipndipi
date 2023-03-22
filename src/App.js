@@ -1,27 +1,22 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Chocolate, Home, Layout, Shisha, Food, Drinks, About } from './Components';
-// import Products from "./Containers/Products"
-import Reciever from './Containers/Reciever';
-
-
-
+import { ChocolateL, FoodL, ShishaL, DrinksL, ChocolateR, FoodR, ShishaR, DrinksR, Home, Layout  } from './Components';
 
 function App() {
-
 
   let routers = createBrowserRouter([
     {
       path: '/', element: <Layout />, children: [
         { index: true, element: <Home /> },
-        { path: 'food', element: <Food /> },
-        { path: 'drinks', element: <Drinks /> },
-        { path: 'chocolate', element: <Chocolate /> },
-        { path: 'shisha', element: <Shisha /> },
-        { path: 'chocolate', element: <Chocolate /> },
-        { path: 'about', element: <About /> },
-        { path: 'reciever', element: <Reciever /> },
- 
+        { path: 'foodar', element: <FoodR /> },
+        { path: 'drinksar', element: <DrinksR /> },
+        { path: 'chocolatear', element: <ChocolateR /> },
+        { path: 'shishaar', element: <ShishaR /> },
+        { path: 'fooden', element: <FoodL /> },
+        { path: 'drinksen', element: <DrinksL /> },
+        { path: 'chocolateen', element: <ChocolateL /> },
+        { path: 'shishaen', element: <ShishaL /> },
+        
 
       ]
     }

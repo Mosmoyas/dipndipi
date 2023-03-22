@@ -14,21 +14,21 @@ const archocolate = [
         image: images.strawberry_banana_delight
     },
     {
-        id: 1, name: "Sweet and simple",
+        id: 2, name: "Sweet and simple",
         arabic_name: "بانكيك كلاسيك",
         category: "Better Milk Pancake",
         ar_category: "بتر ميلك بانكيك", price: "8.000 IQD", description: "Classic pancake topped with butter and maple syrup.",
         image: images.sweet_and_simple
     },
     {
-        id: 1, name: "Crunchy chocolate pancakes",
+        id: 3, name: "Crunchy chocolate pancakes",
         arabic_name: "كرانشي شوكوليت بانكيك",
         category: "Better Milk Pancake",
         ar_category: "بتر ميلك بانكيك", price: "8.000 IQD", description: "Fluffy pancakes with chocolate chips and crispy cereal.",
         image: images.crunchy_chocolate_pancakes
     },
     {
-        id: 1, name: "Speculoos pancake",
+        id: 4, name: "Speculoos pancake",
         arabic_name: "سبيكولوس بانكيك",
         category: "Better Milk Pancake",
         ar_category: "بتر ميلك بانكيك", price: "10.000 IQD", description:
@@ -36,7 +36,7 @@ const archocolate = [
         image: images.speculoos_pancake
     },
     {
-        id: 1, name: "Dip n dip pancake",
+        id: 5, name: "Dip n dip pancake",
         arabic_name: "ديب ان ديب بانكيك",
         category: "Better Milk Pancake",
         ar_category: "بتر ميلك بانكيك", price: "9.500 ", description:
@@ -44,7 +44,7 @@ const archocolate = [
         image: images.dip_n_dip_pancake
     },
     {
-        id: 1, name: "Pancake brownie club",
+        id: 6, name: "Pancake brownie club",
         arabic_name: "بانكيك برواني كلوب",
         category: "Better Milk Pancake",
         ar_category: "بتر ميلك بانكيك", price: "10.500 ", description:
@@ -53,49 +53,49 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Crunchy Speculoos Waffle",
+        id: 7, name: "Crunchy Speculoos Waffle",
         arabic_name: 'كرانشي سبيكولوس وافل',
         category: "Waffles",
         ar_category: "الوافل", price: 7.500, description: "Special dip waffle covered with lotus sauce, lotus biscuits and ice cream.",
         image: images.crunchy_speculoos_waffle
     },
     {
-        id: 1, name: "Triple Chocolate Waffle",
+        id: 8, name: "Triple Chocolate Waffle",
         arabic_name: 'تريبل شوكوليت وافل',
         category: "Waffles",
         ar_category: "الوافل", price: 6.000, description: "Special dip waffle covered with three types of chocolate.",
         image: images.triple_chocolate_waffle
     },
     {
-        id: 1, name: "Crunchy Oreo Waffle",
+        id: 9, name: "Crunchy Oreo Waffle",
         arabic_name: 'كرانشي أوريو وافل',
         category: "Waffles",
         ar_category: "الوافل", price: 8.000, description: "A classic waffle with chunks of Oreo cookies mixed in.",
         image: images.crunchy_oreo_waffle
     },
     {
-        id: 1, name: "Alaskan Waffle",
+        id: 10, name: "Alaskan Waffle",
         arabic_name: 'وافل ألاسكان',
         category: "Waffles",
         ar_category: "الوافل", price: 8.500, description: "A waffle topped with smoked salmon, cream cheese, and dill.",
         image: images.alaskan_waffle
     },
     {
-        id: 1, name: "Waffle Stick",
+        id: 11, name: "Waffle Stick",
         arabic_name: 'وافل ستيك',
         category: "Waffles",
         ar_category: "الوافل", price: 5.500, description: "A handheld waffle on a stick, perfect for on-the-go snacking.",
         image: images.waffle_stick
     },
     {
-        id: 1, name: "dipndip Waffle",
+        id: 12, name: "dipndip Waffle",
         arabic_name: 'ديب ان ديب وافل',
         category: "Waffles",
         ar_category: "الوافل", price: 9.500, description: "A waffle topped with chocolate, strawberries, and whipped cream.",
         image: images.dipndip_waffle
     },
     {
-        id: 1, name: "waffle Fries",
+        id: 13, name: "waffle Fries",
         arabic_name: 'وافل فرايز',
         category: "Waffles",
         ar_category: "الوافل", price: 5.000, description: "Served with your choice of chocolate",
@@ -103,7 +103,7 @@ const archocolate = [
     }
     ,
     {
-        id: 1, name: "Brownies crepe",
+        id: 14, name: "Brownies crepe",
         arabic_name: "براونيز كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "8.000 ", description:
@@ -111,7 +111,7 @@ const archocolate = [
         image: images.brownies_crepe
     },
     {
-        id: 1, name: "Fettuccine crepe",
+        id: 15, name: "Fettuccine crepe",
         arabic_name: "فيتوتشيني كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "8.500 ", description:
@@ -119,7 +119,7 @@ const archocolate = [
         image: images.fettuccine_crepe
     },
     {
-        id: 1, name: "Triple chocolate crepe",
+        id: 16, name: "Triple chocolate crepe",
         arabic_name: "تريبل شوكوليت كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "6.500 ", description:
@@ -127,7 +127,7 @@ const archocolate = [
         image: images.triple_chocolate_crepe
     },
     {
-        id: 1, name: "Crispy crepe",
+        id: 17, name: "Crispy crepe",
         arabic_name: "كريسبي كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "7.000 ", description:
@@ -135,7 +135,7 @@ const archocolate = [
         image: images.crispy_crepe
     },
     {
-        id: 1, name: "Digestive crepe",
+        id: 18, name: "Digestive crepe",
         arabic_name: "دايجستيف كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "7.000 ", description:
@@ -143,7 +143,7 @@ const archocolate = [
         image: images.digestive_crepe
     },
     {
-        id: 1, name: "Oh my smores",
+        id: 19, name: "Oh my smores",
         arabic_name: "سمورز كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "10.000 ", description:
@@ -151,7 +151,7 @@ const archocolate = [
         image: images.oh_my_smores
     },
     {
-        id: 1, name: "Pistachio candy crepe",
+        id: 20, name: "Pistachio candy crepe",
         arabic_name: "بيستاشيو كاندي كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "11.000 ", description:
@@ -159,14 +159,14 @@ const archocolate = [
         image: images.pistachio_candy_crepe
     },
     {
-        id: 1, name: "Banana wrap crepe",
+        id: 21, name: "Banana wrap crepe",
         arabic_name: "بنانا راب كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "7.000 ", description: "A crepe filled with sliced bananas and chocolate sauce.",
         image: images.banana_wrap_crepe
     },
     {
-        id: 1, name: "Crunchy triple chocolate crepe",
+        id: 22, name: "Crunchy triple chocolate crepe",
         arabic_name: "كرانشي تريبل شوكوليت كريب",
         category: "Crepes",
         ar_category: "الكريب", price: "8.500 ", description:
@@ -174,7 +174,7 @@ const archocolate = [
         image: images.crunchy_triple_chocolate_crepe
     },
     {
-        id: 1, name: "Crunchy speculoos crepe",
+        id: 23, name: "Crunchy speculoos crepe",
         arabic_name: "كرانشي سبيكولوس كريب",
         category: "Crepes",
         ar_category: "الكريب", price: 8.500,
@@ -183,7 +183,7 @@ const archocolate = [
         image: images.crunchy_speculoos_crepe
     },
     {
-        id: 1, name: "Dip n dip crepe",
+        id: 24, name: "Dip n dip crepe",
         arabic_name: 'ديب ان ديب كريب',
         category: "Crepes",
         ar_category: "الكريب", price: 9.000, description:
@@ -191,7 +191,7 @@ const archocolate = [
         image: images.dip_n_dip_crepe
     },
     {
-        id: 1, name: "Mighty oreo crepe",
+        id: 25, name: "Mighty oreo crepe",
         arabic_name: 'مايتي كريب الأوريو',
         category: "Crepes",
         ar_category: "الكريب", price: 10.500, description:
@@ -199,7 +199,7 @@ const archocolate = [
         image: images.mighty_oreo_crepe
     },
     {
-        id: 1, name: "Mighty speculous crepe",
+        id: 26, name: "Mighty speculous crepe",
         arabic_name: 'مايتي كريب السبيكولوس',
         category: "Crepes",
         ar_category: "الكريب", price: 10.500, description:
@@ -207,7 +207,7 @@ const archocolate = [
         image: images.mighty_speculous_crepe
     },
     {
-        id: 1, name: "Mighty crepe",
+        id: 27, name: "Mighty crepe",
         arabic_name: 'مايتي كريب',
         category: "Crepes",
         ar_category: "الكريب", price: 10.000, description:
@@ -216,7 +216,7 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Dip n dip chocolate brownie",
+        id: 28, name: "Dip n dip chocolate brownie",
         arabic_name: 'ديب ان ديب شوكوليت براوني',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 7.000, description:
@@ -224,7 +224,7 @@ const archocolate = [
         image: images.dip_n_dip_chocolate_brownie
     },
     {
-        id: 1, name: "Chocolate fondant",
+        id: 29, name: "Chocolate fondant",
         arabic_name: 'شوكوليت فوندان',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 7.500, description:
@@ -232,7 +232,7 @@ const archocolate = [
         image: images.chocolate_fondant
     },
     {
-        id: 1, name: "The rock star",
+        id: 30, name: "The rock star",
         arabic_name: 'روك ستار',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 7.500, description:
@@ -240,7 +240,7 @@ const archocolate = [
         image: images.the_rock_star
     },
     {
-        id: 1, name: "Cream paff pyramid",
+        id: 31, name: "Cream paff pyramid",
         arabic_name: 'كريم باف بيراميد',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 9.000, description:
@@ -248,7 +248,7 @@ const archocolate = [
         image: images.cream_paff_pyramid
     },
     {
-        id: 1, name: "The mega jar",
+        id: 32, name: "The mega jar",
         arabic_name: 'ميغا جار',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 8.000, description:
@@ -256,7 +256,7 @@ const archocolate = [
         image: images.the_mega_jar
     },
     {
-        id: 1, name: "Fondue indulgence",
+        id: 33, name: "Fondue indulgence",
         arabic_name: 'فوندو إندلجينس',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: 10.500, description:
@@ -264,14 +264,14 @@ const archocolate = [
         image: images.fondue_indulgence
     },
     {
-        id: 1, name: "Chocolate and fruit skewers",
+        id: 34, name: "Chocolate and fruit skewers",
         arabic_name: 'أسياخ الشوكولاتة والفواكه',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '4.500 ', description: "Fresh fruit skewers drizzled with rich chocolate sauce.",
         image: images.chocolate_and_fruit_skewers
     },
     {
-        id: 1, name: "Pain perdu",
+        id: 35, name: "Pain perdu",
         arabic_name: 'بان بيردو',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '8.500 ', description:
@@ -279,21 +279,21 @@ const archocolate = [
         image: images.pain_perdu
     },
     {
-        id: 1, name: "Chewy chocolate chip cookies",
+        id: 36, name: "Chewy chocolate chip cookies",
         arabic_name: 'كوكيز بالشوكولاتة',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '6.000 ', description: "Soft and chewy cookies loaded with chunks of chocolate.",
         image: images.chewy_chocolate_chip_cookies
     },
     {
-        id: 1, name: "Caramel cheesecake bars",
+        id: 37, name: "Caramel cheesecake bars",
         arabic_name: 'أصابع تشيزكيك بالكراميل',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '9.500 ', description: "Creamy cheesecake bars swirled with rich caramel sauce.",
         image: images.caramel_cheesecake_bars
     },
     {
-        id: 1, name: "Frozen cheesecake pops",
+        id: 38, name: "Frozen cheesecake pops",
         arabic_name: 'تشيزكيك بوب مثلجة',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '7.000 ', description:
@@ -301,7 +301,7 @@ const archocolate = [
         image: images.frozen_cheesecake_pops
     },
     {
-        id: 1, name: "Cinnamon and pecan crepe",
+        id: 39, name: "Cinnamon and pecan crepe",
         arabic_name: 'كريب السينامون والبيكان',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '9.500 ',
@@ -310,7 +310,7 @@ const archocolate = [
         image: images.cinnamon_and_pecan_crepe
     },
     {
-        id: 1, name: "Brownies n cookies in a pan",
+        id: 40, name: "Brownies n cookies in a pan",
         arabic_name: 'براونيز ان كوكيز مخبوز بالفرن',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '9.000 ', description:
@@ -319,7 +319,7 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Eclair",
+        id: 41, name: "Eclair",
         arabic_name: 'اكلير',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '4.500 ', description:
@@ -327,14 +327,14 @@ const archocolate = [
         image: images.eclair
     },
     {
-        id: 1, name: "The Chocolate Burj",
+        id: 42, name: "The Chocolate Burj",
         arabic_name: 'برج الشوكولاتة',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '10.500 ', description: "A decadent chocolate pastry topped with gold flakes.",
         image: images.the_chocolate_burj
     },
     {
-        id: 1, name: "Speculoos n Cookies in a Pan",
+        id: 43, name: "Speculoos n Cookies in a Pan",
         arabic_name: 'سبيكولوس ان كوكيز مخبوز بالفرن',
         category: "indulgence",
         ar_category: "تغميسات الشوكولاتة", price: '9.000 ', description:
@@ -343,14 +343,14 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Crispy Chocolate Ice Cream",
+        id: 44, name: "Crispy Chocolate Ice Cream",
         arabic_name: 'كريسبي شوكليت ايس كريم',
         category: "Ice Cream",
         ar_category: "ايس كريم", price: '6.500 ', description: "Vanilla ice cream with crispy chocolate flakes.",
         image: images.crispy_chocolate_ice_cream
     },
     {
-        id: 1, name: "Ice Cream Brownie Sundae",
+        id: 45, name: "Ice Cream Brownie Sundae",
         arabic_name: 'ايس كريم براوني صنداي',
         category: "Ice Cream",
         ar_category: "ايس كريم", price: '7.000 ', description:
@@ -358,7 +358,7 @@ const archocolate = [
         image: images.ice_cream_brownie_sundae
     },
     {
-        id: 1, name: "Strawberry Crispy Chocolate Ice Cream",
+        id: 46, name: "Strawberry Crispy Chocolate Ice Cream",
         arabic_name: 'كرسبي شوكليت ايس كريم',
         category: "Ice Cream",
         ar_category: "ايس كريم", price: '7.000 ', description:
@@ -366,14 +366,14 @@ const archocolate = [
         image: images.strawberry_crispy_chocolate_ice_cream
     },
     {
-        id: 1, name: "Ice Cream Scoop",
+        id: 47, name: "Ice Cream Scoop",
         arabic_name: 'ايس كريم سكوب',
         category: "Ice Cream",
         ar_category: "ايس كريم", price: '2.500 ', description: "One scoop of vanilla or chocolate ice cream.",
         image: images.ice_cream_scoop
     },
     {
-        id: 1, name: "Profiterole",
+        id: 48, name: "Profiterole",
         arabic_name: 'بروفيتيرول',
         category: "Ice Cream",
         ar_category: "ايس كريم", price: '6.000 ', description: "A light and fluffy French pastry filled with whipped cream and drizzled with chocolate sauce.",
@@ -381,14 +381,14 @@ const archocolate = [
     }
     ,
     {
-        id: 1, name: "Speculoos",
+        id: 49, name: "Speculoos",
         arabic_name: 'سبيكولوس',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 6.500, description: "Warm Speculoos cake served with vanilla ice cream.",
         image: images.speculoos
     },
     {
-        id: 1, name: "Triple Chocolate Mousse",
+        id: 50, name: "Triple Chocolate Mousse",
         arabic_name: 'تريبل شوكليت موس',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 7.500, description:
@@ -396,7 +396,7 @@ const archocolate = [
         image: images.triple_chocolate_mousse
     },
     {
-        id: 1, name: "Oreo Cheesecake",
+        id: 51, name: "Oreo Cheesecake",
         arabic_name: 'أوريو تشيز كيك',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 7.000,
@@ -404,7 +404,7 @@ const archocolate = [
         image: images.oreo_cheesecake
     },
     {
-        id: 1, name: "Fruit Cheesecake",
+        id: 52, name: "Fruit Cheesecake",
         arabic_name: 'تشيز كيك الفواكه',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 6.000,
@@ -412,7 +412,7 @@ const archocolate = [
         image: images.fruit_cheesecake
     },
     {
-        id: 1, name: "Cheesecake",
+        id: 53, name: "Cheesecake",
         arabic_name: 'تشيزكيك',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 6.000,
@@ -421,7 +421,7 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Mango Cheesecake",
+        id: 54, name: "Mango Cheesecake",
         arabic_name: 'تشيز كيك المانغو',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 5.500,
@@ -429,7 +429,7 @@ const archocolate = [
         image: images.mango_cheesecake
     },
     {
-        id: 1, name: "Sticky Pecan Cinnaroll",
+        id: 56, name: "Sticky Pecan Cinnaroll",
         arabic_name: 'ميلك كيك الفواكه',
         category: "Cakepices",
         ar_category: "قطع الكيك", price: 8.500,
@@ -441,7 +441,7 @@ const archocolate = [
 
 
     {
-        id: 1, name: "Chocolate Pudding",
+        id: 57, name: "Chocolate Pudding",
         arabic_name: 'بودينغ الشوكولاته',
         category: "Cake by Order",
         ar_category: "طلبات الكيك ", price: 23.000,
@@ -449,14 +449,14 @@ const archocolate = [
             "Rich, velvety chocolate pudding made from the finest ingredients.",
         image: images.chocolate_pudding
     }, {
-        id: 1, name: "Brownies Cheesecake",
+        id: 58, name: "Brownies Cheesecake",
         arabic_name: 'دوبل أوريو تشييزكيك',
         category: "Cake by Order",
         ar_category: "طلبات الكيك", price: 45.000,
         description: "Indulgent layers of fudgy brownie and creamy cheesecake.",
         image: images.brownies_cheesecake
     }, {
-        id: 1, name: "Double Oreo Cheesecake",
+        id: 59, name: "Double Oreo Cheesecake",
         arabic_name: 'دوبل أوريو تشييزكيك',
         category: "Cake by Order",
         ar_category: "طلبات الكيك", price: 45.000,
@@ -465,7 +465,7 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Layered Lotus",
+        id: 60, name: "Layered Lotus",
         arabic_name: 'كيك اللوتس الشهير',
         category: "Cake by Order",
         ar_category: "طلبات الكيك", price: 40.000,
@@ -475,7 +475,7 @@ const archocolate = [
     },
 
     {
-        id: 1, name: "Large Dip n Share Box",
+        id: 61, name: "Large Dip n Share Box",
         arabic_name: 'بوكس المشاركة الكبير',
         category: "Delivery or takeaway",
         ar_category: "دليفري أو تيك اواي", price: 18.000,
@@ -484,7 +484,7 @@ const archocolate = [
         image: images.large_dip_n_share_box
     },
     {
-        id: 1, name: "Extra Large Dip n Share Box",
+        id: 62, name: "Extra Large Dip n Share Box",
         arabic_name: 'بوكس المشاركة العملاق',
         category: "Delivery or takeaway",
         ar_category: "دليفري أو تيك اواي", price: 35.000,

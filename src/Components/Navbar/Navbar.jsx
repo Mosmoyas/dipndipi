@@ -1,68 +1,228 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useMediaQuery } from "@mui/material";
-import "./Navbar.css";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from '../../assets/images/main/Dipndip_logo.png';
+import logo from "../../assets/images/main/Dipndip_logo.png";
+import { useTranslation } from "react-i18next";
+import "./nav.css";
 
 const Navbar = () => {
-
-
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [t, i18n] = useTranslation();
   const isMobile = useMediaQuery("(max-width: 767px)");
 
-  const handleToggle = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  function toggleNav() {
     setIsNavOpen(!isNavOpen);
-  };
+  }
 
   return (
-    <nav className="navbar navbar-expand-md bg text-white">
-      <Link to="/" className="logo navbar-brand fs-3 ms-3">
-        <img className="logoimage" src={logo} alt="" />
-      </Link>
-      {isMobile && (
-        <button
-          type="button"
-          className="navbar-toggler me-3"
-          onClick={handleToggle}
-        >
-          {isNavOpen ? <RiCloseLine /> : <RiMenu3Line />}
-        </button>
-      )}
-      <div
-        className={`collapse navbar-collapse ${isNavOpen ? "show" : ""} `}
-        id="btn"
-      >
-        <ul className="navbar-nav flxgr  ">
-
-          <li className="nvli nav-item ">
-            <Link to="/food" className="nav-link mx-0">
-              Food
+    <nav className="main">
+      {
+        i18n.language === "en" ? (
+          <div className="english">
+            <Link to="/" className="logo ">
+              <img className="logoimage" src={logo} alt="" />
             </Link>
-          </li>
-          <li className="nvli nav-item ">
+            <div className="langs">
+             
+              <Link to="/" onClick={() => i18n.changeLanguage("ar")}
+              >عربي</Link>
+            </div>
+            {isMobile && (
+              <div className="navbar-column">
+                <div
+                  className={`navbar-items-column  ${isNavOpen ? "show" : ""} `}
+                  id="btn"
+                >
 
-            <Link to="/drinks" className="nav-link mx-0">
-              Drinks
-            </Link>
-          </li>
-          <li className="nvli nav-item ">
 
-            <Link to="/chocolate" className="nav-link mx-0">
-              Chocolate
-            </Link>
-          </li>
-          <li className="nvli nborder nav-item ">
 
-            <Link to="/shisha" className="nav-link mx-0">
-              Shisha
-            </Link>
-          </li>
-        </ul>
+                  <ul className="ulist">
+                    <li className=" ">
+                      <Link to="/fooden" className="">
+                        {t("food")}
+                      </Link>
+                    </li>
+                    <li className=" ">
+                      <Link to="/drinksen" className="">
+                        {t("drinks")}
+                      </Link>
+                    </li>
+                    <li className=" ">
+                      <Link to="/chocolateen" className="">
+                        {t("chocolate")}
+                      </Link>
+                    </li>
+                    <li className="">
+                      <Link to="/shishaen" className="">
+                        {t("shisha")}
+                      </Link>
+                    </li>
+                    <li
+                      className="btn-lang"
+                      onClick={() => i18n.changeLanguage("ar")}
+                    >
+                      <Link to="/" className="">
+                        AR
+                      </Link>
+                    </li>
+                  </ul>
+                </div><button
+                  type="button"
+                  className="btn-icon en"
+                  onClick={toggleNav}
+                >
+                  {isNavOpen ? <RiCloseLine /> : <RiMenu3Line />}
+                </button>
 
-      </div>
+
+
+              </div>
+            )}
+            {/* <div
+              className={`navbar-items  ${isNavOpen ? "show" : ""} `}
+              id="btn"
+            > */}
+            <div
+              className={`navbar-items`}
+              id="btn"
+            >
+              <ul className="ulist">
+                <li className=" ">
+                  <Link to="/fooden" className="">
+                    {t("food")}
+                  </Link>
+                </li>
+                <li className=" ">
+                  <Link to="/drinksen" className="">
+                    {t("drinks")}
+                  </Link>
+                </li>
+                <li className=" ">
+                  <Link to="/chocolateen" className="">
+                    {t("chocolate")}
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="/shishaen" className="">
+                    {t("shisha")}
+                  </Link>
+                </li>
+                <li
+                  className="btn-lang"
+                  onClick={() => i18n.changeLanguage("ar")}
+                >
+                  <Link to="/" className="">
+                    AR
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        ) : (
+          <div className="arabic">
+            <Link to="/" className="logo ">
+              <img className="logoimage" src={logo} alt="" />
+              </Link>
+              <div className="langs">
+                <Link to="/" onClick={() => i18n.changeLanguage("en")}
+              >English</Link>
+               
+              </div>
+            {isMobile && (
+              <div className="navbar-column">
+                <div
+                  className={`navbar-items-column  ${isNavOpen ? "show" : ""} `}
+                  id="btn"
+                >
+                  <ul className="ulist">
+                    <li className=" ">
+                      <Link to="/foodar" className="">
+                        {t("food")}
+                      </Link>
+                    </li>
+                    <li className=" ">
+                      <Link to="/drinksar" className="">
+                        {t("drinks")}
+                      </Link>
+                    </li>
+                    <li className=" ">
+                      <Link to="/chocolatear" className="">
+                        {t("chocolate")}
+                      </Link>
+                    </li>
+                    <li className="">
+                      <Link to="/shishaar" className="">
+                        {t("shisha")}
+                      </Link>
+                    </li>
+                    <li
+                      className="btn-lang"
+                      onClick={() => i18n.changeLanguage("ar")}
+                    >
+                      <Link to="/" className="">
+                        AR
+                      </Link>
+                    </li>
+                  </ul>
+                </div><button
+                  type="button"
+                  className="btn-icon ar"
+                  onClick={toggleNav}
+                >
+                  {isNavOpen ? <RiCloseLine /> : <RiMenu3Line />}
+                </button>
+
+
+
+              </div>
+            )}
+
+            <div
+              className={`navbar-items`}
+              id="btn"
+            >
+              <ul className="ulist">
+                <li className=" ">
+                  <Link to="/foodar" className="">
+                    {t("food")}
+                  </Link>
+                </li>
+                <li className=" ">
+                  <Link to="/drinksar" className="">
+                    {t("drinks")}
+                  </Link>
+                </li>
+                <li className=" ">
+                  <Link to="/chocolatear" className="">
+                    {t("chocolate")}
+                  </Link>
+                </li>
+                <li className="">
+                  <Link to="/shishaar" className="">
+                    {t("shisha")}
+                  </Link>
+                </li>
+                <li
+                  className="btn-lang"
+                  onClick={() => i18n.changeLanguage("en")}
+                >
+                  <Link to="/" className="">
+                    EN
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )
+      }
     </nav>
   );
 };
 
 export default Navbar;
+
+
+
+

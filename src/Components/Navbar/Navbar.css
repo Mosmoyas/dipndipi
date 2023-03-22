@@ -1,3 +1,32 @@
+.main {
+
+    right: 0;
+    display: flex;
+    color: black;
+    padding: 1rem;
+}
+
+.arabic {
+    display: flex;
+    direction: rtl;
+    flex: auto !important;
+    align-items: center;
+
+}
+
+.english {
+    display: flex;
+    direction: ltr;
+    align-items: center;
+        flex: auto !important;
+}
+
+
+ .navbar-collapse {
+     display: flex !important;
+ }
+
+
 .logo {
     background-color: rgb(214, 214, 213);
     padding: 2rem 1rem;
@@ -6,7 +35,7 @@
 }
 
 .logo:hover {
-    /* background-color: rgb(253, 5, 5); */
+    background-color: rgb(253, 5, 5);
 
 }
 
@@ -25,26 +54,11 @@
 }
 
 
-
-.flxgr li {
-    font-weight: bold;
-    font-size: 20px;
+.ulist{
+    display: flex;
+    align-items: center;
 }
-
-.flxgr li a {
-    color: red;
-
-}
-
-.flxgr li a:hover {
-    color: rgb(160, 159, 159);
-}
-
-button:focus {
-    box-shadow: none;
-}
-
-
+.ulist li a{margin: 1rem; }
 .navbar-nav {
     margin: 0;
     padding: 0;
@@ -86,9 +100,19 @@ button:focus:not(:focus-visible) {
     border: none !important;
 }
 
+/* .btn-lang {
+    margin-left: 1rem;
+    padding: .5rem;
+    color: green;
+    border: none;
+}
+
+.btn-lang:last-of-type {
+    margin-right: 1rem;
+} */
+
 @media only screen and (max-width: 768px) {
 
-    /* Styles for mobile devices */
     .navbar-nav {
         display: none;
     }
@@ -114,7 +138,6 @@ button:focus:not(:focus-visible) {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-    /* Styles for tablet devices */
     .navbar-nav {
         flex-direction: column;
         align-items: center;
@@ -127,7 +150,6 @@ button:focus:not(:focus-visible) {
 
 @media only screen and (min-width: 1025px) {
 
-    /* Styles for laptop devices */
     .navbar-nav {
         margin-left: auto;
         display: flex;
