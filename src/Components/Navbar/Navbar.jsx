@@ -4,7 +4,7 @@ import { useMediaQuery } from "@mui/material";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../assets/images/main/Dipndip_logo.png";
 import { useTranslation } from "react-i18next";
-import "./nav.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [t, i18n] = useTranslation();
@@ -24,8 +24,8 @@ const Navbar = () => {
             <Link to="/" className="logo ">
               <img className="logoimage" src={logo} alt="" />
             </Link>
-            <div className="langs">
-             
+            <div className="langs arb">
+
               <Link to="/" onClick={() => i18n.changeLanguage("ar")}
               >عربي</Link>
             </div>
@@ -33,11 +33,7 @@ const Navbar = () => {
               <div className="navbar-column">
                 <div
                   className={`navbar-items-column  ${isNavOpen ? "show" : ""} `}
-                  id="btn"
-                >
-
-
-
+                  id="btn">
                   <ul className="ulist">
                     <li className=" ">
                       <Link to="/fooden" className="">
@@ -64,7 +60,7 @@ const Navbar = () => {
                       onClick={() => i18n.changeLanguage("ar")}
                     >
                       <Link to="/" className="">
-                        AR
+                        عربي
                       </Link>
                     </li>
                   </ul>
@@ -80,10 +76,7 @@ const Navbar = () => {
 
               </div>
             )}
-            {/* <div
-              className={`navbar-items  ${isNavOpen ? "show" : ""} `}
-              id="btn"
-            > */}
+
             <div
               className={`navbar-items`}
               id="btn"
@@ -114,7 +107,7 @@ const Navbar = () => {
                   onClick={() => i18n.changeLanguage("ar")}
                 >
                   <Link to="/" className="">
-                    AR
+                    عربي
                   </Link>
                 </li>
               </ul>
@@ -124,12 +117,12 @@ const Navbar = () => {
           <div className="arabic">
             <Link to="/" className="logo ">
               <img className="logoimage" src={logo} alt="" />
-              </Link>
-              <div className="langs">
-                <Link to="/" onClick={() => i18n.changeLanguage("en")}
+            </Link>
+            <div className="langs eng">
+              <Link to="/" onClick={() => i18n.changeLanguage("en")}
               >English</Link>
-               
-              </div>
+
+            </div>
             {isMobile && (
               <div className="navbar-column">
                 <div
@@ -162,7 +155,7 @@ const Navbar = () => {
                       onClick={() => i18n.changeLanguage("ar")}
                     >
                       <Link to="/" className="">
-                        AR
+                        English
                       </Link>
                     </li>
                   </ul>
@@ -209,7 +202,7 @@ const Navbar = () => {
                   onClick={() => i18n.changeLanguage("en")}
                 >
                   <Link to="/" className="">
-                    EN
+                    English
                   </Link>
                 </li>
               </ul>

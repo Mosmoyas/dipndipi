@@ -1,5 +1,5 @@
 import React from 'react'
-import { arfood } from '../../constants/index';
+import { arfood } from '../../Constants/index';
 import Products from "../../Containers/English/English"
 
 const FoodL = () => {

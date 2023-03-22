@@ -1,5 +1,5 @@
 import React from 'react'
-import archocolate from '../../constants/archocolate';
+import archocolate from '../../Constants/archocolate';
 import Products from "../../Containers/English/English"
 
 const ChocolateL = () => {
