@@ -7,7 +7,7 @@ const arfood = [
         ar_category: "فطور",
         description:
             "Chicken fajita crepe - pepperoni pizza - fried eggs - cheese plate - labneh - vegetable plate - pancake with chocolate - bread - tea for 3 people",
-        price: "25000",
+        price: "20000",
         image: images.breakfast_for_3_person,
     },
     {
@@ -18,19 +18,19 @@ const arfood = [
         ar_category: "فطور",
         description:
             "Choose a dish from the following: Museo crepe | Madam Crepe | Cheese Crepe | Chicken Fajita Crepe | feta cheese crepe - Fried eggs - small vegetable plate - bread - tea",
-        price: "10000",
+        price: "8000",
         image: images.breakfast_for_one_person,
     },
-    {
-      id:3,  name: "Breakfast for 5 Person",
-        arabic_name: "فطور لخمس اشخاص",
-        category: "breakfast",
-        ar_category: "فطور",
-        description:
-            "Honey-labneh-pepperoni pizza-egg-stuffed with meat-blueberry jam-strawberry jam-pancake with chocolate-egg and mortadella-guimar-vegetables-samon-tea-molasses-butter-shallal cheese-hummus with tahini",
-        price: "50000",
-        image: images.breakfast_for_5_person,
-    },
+    // {
+    //   id:3,  name: "Breakfast for 5 Person",
+    //     arabic_name: "فطور لخمس اشخاص",
+    //     category: "breakfast",
+    //     ar_category: "فطور",
+    //     description:
+    //         "Honey-labneh-pepperoni pizza-egg-stuffed with meat-blueberry jam-strawberry jam-pancake with chocolate-egg and mortadella-guimar-vegetables-samon-tea-molasses-butter-shallal cheese-hummus with tahini",
+    //     price: "50000",
+    //     image: images.breakfast_for_5_person,
+    // },
 
     {
       id:4,  name: "Chicken Wrap",
@@ -38,7 +38,7 @@ const arfood = [
         category: "salt crepe",
         ar_category: "كريب مالحة",
         description: "chicken wrap",
-        price: "8000",
+        price: "6000",
         image: images.chicken_wrap,
     },
     {
@@ -48,7 +48,7 @@ const arfood = [
         ar_category: "كريب مالحة",
         description:
             "Chicken and Edam cheese, garnished with lettuce and toasted toast and served with Caesar dressing",
-        price: "8000",
+        price: "6000",
         image: images.chicken_caesar,
     },
 
@@ -59,7 +59,7 @@ const arfood = [
         ar_category: "كاسديا",
         description:
             "Mixed cheeses, spinach, fried onions, oregano and mayonnaise",
-        price: "9000",
+        price: "7000",
         image: images.chicken,
     },
     {
@@ -69,7 +69,7 @@ const arfood = [
         category: "quesadilla",
         ar_category: "كاسديا",
         description: "Pesto, fried mushrooms, mayonnaise",
-        price: "8500",
+        price: "6500",
         image: images.smoked_turkey_and_cheese,
     },
 
@@ -80,7 +80,7 @@ const arfood = [
         ar_category: "بيتزا تورتيلا",
         description:
             "Tortilla bread covered with mozzarella cheese, parmesan cheese and tomato sauce",
-        price: "7500",
+        price: "6000",
         image: images.margarita,
     },
     {
@@ -91,7 +91,7 @@ const arfood = [
         ar_category: "بيتزا تورتيلا",
         description:
             "Tortilla bread covered with pepperoni, tomato sauce, mozzarella cheese and parmesan",
-        price: "8500",
+        price: "7000",
         image: images.pepperoni,
     },
     {
@@ -103,7 +103,7 @@ const arfood = [
 
         description:
             "Tortilla bread tossed with sweet pepper, corn, sugar syrup, tomato sauce, mozzarella cheese and",
-        price: "8500",
+        price: "6500",
         image: images.vegetables,
     },
     {
@@ -114,7 +114,7 @@ const arfood = [
         ar_category: "بيتزا تورتيلا",
         description:
             "Tortilla bread topped with smoked turkey slices, fresh mushrooms, tomato sauce, mozzarella cheese and parmesan cheese, garnished with fresh arugula",
-        price: "9500",
+        price: "8000",
         image: images.turkey_and_cheese,
     },
 
